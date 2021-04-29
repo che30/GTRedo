@@ -1,7 +1,11 @@
 
+<% content_for :nav do %>
+<nav class="bg-primary d-flex py-1 align-items-center">
+<div><i class="fa fa-arrow-left text-white display-6"></i></div>
+<div class="text-white marginLogin ">Login</div></nav>
+<% end %>
 
-<div class="form w-50 mx-auto">
-  <h2 class="text-center">Log in</h2>
+<div class="form w-50 mx-auto mt-2">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field form-group">
     <%= f.label :email %><br />

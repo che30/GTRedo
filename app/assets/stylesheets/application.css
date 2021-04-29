@@ -13,3 +13,7 @@
  *= require_tree .
  *= require_self
  */
+.marginLogin{
+  margin-left: 43%;
+  font-size: 1.5rem;
+}
