@@ -25,14 +25,23 @@ background-color: #3778c2;
   background-color: #3778c2;
 }
 .usSectionOne{
- 
+ padding-bottom: 25px;
 }
 .usSectiontwo{
   justify-content: space-around;
+ 
   height: 300px;
 }
 .usSectiontwo div{
   border-bottom: 1px solid white;
   width: 300px;
-  padding-bottom: 20px;
+  padding-bottom: 13px;
+}
+.usMl-u{
+  margin-left: 20px;
+}
+.usMlOne-u{
+  padding: 3px 8px 3px 10px;
+
+  border: 1px solid white;
 }
