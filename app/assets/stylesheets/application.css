@@ -20,3 +20,19 @@
 .NavBackGround {
 background-color: #3778c2;
 }
+.us{
+  height: 100vh;
+  background-color: #3778c2;
+}
+.usSectionOne{
+ 
+}
+.usSectiontwo{
+  justify-content: space-around;
+  height: 300px;
+}
+.usSectiontwo div{
+  border-bottom: 1px solid white;
+  width: 300px;
+  padding-bottom: 20px;
+}
