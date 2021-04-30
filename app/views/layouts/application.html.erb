@@ -15,6 +15,7 @@
 
   <body>
  
+ 
     <% if content_for? :nav %>
     <%= content_for :nav %>
     <% elsif content_for? :signup %>
@@ -22,6 +23,7 @@
       <% elsif content_for :edit %>
       <%= content_for :edit %>
     <% end %>
+   
     
 
     <%= yield %>
