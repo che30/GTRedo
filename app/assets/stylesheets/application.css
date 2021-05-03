@@ -48,7 +48,7 @@ background-color: #3778c2;
 .usProfileImgHeight{
 height: 100px;
 }
-nav a{
+nav a ,div a{
   text-decoration: none;
   color: white;
 }
@@ -76,7 +76,7 @@ nav a{
   min-width: 300px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-  height: 90vh;
+  height: 93.5vh;
 }
 
 /* Links inside the dpn */
@@ -96,5 +96,31 @@ nav a{
 }
 .marginTG{
   margin-left: 40%;
-  font-size: 2rem;
+  font-size: 1.5rem;
+}
+.transactionImg{
+width: 50%;
+}
+.tGButton{
+  margin-top: 38%;
+}
+@media(max-width: 567px){
+  .tGButton{
+    margin-top: 145%;
+  }
+  .marginTG{
+    margin-left: 23%;
+  }
+}
+@media(min-width: 767px) and (max-width: 1024px){
+  .tGButton{
+    margin-top: 115%;
+  }
+ 
+}
+@media(min-width: 568px) and (max-width: 768px){
+  .tGButton{
+    margin-top: 146%;
+  }
+ 
 }
