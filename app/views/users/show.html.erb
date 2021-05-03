@@ -5,6 +5,7 @@
 <% end %></p>
 <p class="<%="#{image_available?} "%> "><%= link_to edit_user_registration_path(current_user),class:"text-white" do %>
 <%= image_tag(@user.avatar,class:"w-25 rounded-circle usProfileImgHeight") %>
+
 <% end %></p>
 
 <p><%= @user.name %></p>

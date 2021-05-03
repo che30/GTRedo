@@ -20,8 +20,11 @@
     <%= content_for :nav %>
     <% elsif content_for? :signup %>
       <%= content_for :signup %>
-      <% elsif content_for :edit %>
+    <% elsif content_for :edit %>
       <%= content_for :edit %>
+    <% elsif content_for? :transactionGroups %>
+      <%= content_for :transactionGroups %>
+     
     <% end %>
    
     
