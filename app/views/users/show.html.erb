@@ -1,8 +1,12 @@
 <div class="text-center us text-white d-flex flex-column align-items-center align-content-center  justify-content-center">
   <section class="usSectionOne">
-   <p class="text-white display-1 "> <%= link_to edit_user_registration_path(current_user),class:"text-white" do %>
+   <p class="<%="#{image_unavailable?}"%> text-white display-1 "> <%= link_to edit_user_registration_path(current_user),class:"text-white" do %>
  <i class="<%="#{user_avatar}"%>"></i>
 <% end %></p>
+<p class="<%="#{image_available?} "%> "><%= link_to edit_user_registration_path(current_user),class:"text-white" do %>
+<%= image_tag(@user.avatar,class:"w-25 rounded-circle usProfileImgHeight") %>
+<% end %></p>
+
 <p><%= @user.name %></p>
   </section>
 <section class="d-flex flex-column usSectiontwo ">
@@ -12,6 +16,4 @@
         <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle"> <i class="fa fa-paper-plane-o"></i></p> <p class="usMl-u">four</p></div>
    
 </section>
-
-<p><%="#{image_available?}"%></p>
 </div>
