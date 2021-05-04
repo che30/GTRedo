@@ -105,7 +105,10 @@ width: 80%;
   margin-top: 37%;
 
 }
-.tGButton a{
+.tGButtonNg{
+  margin-top: 35.5%;
+}
+.tGButton a,.tGButtonNg a{
 border: 1px solid white;
 padding: 10px;
 border-radius: 5px;
@@ -114,9 +117,21 @@ border-radius: 5px;
   width: 30%;
 }
 
+.main-section{
+  background-color: rgba(203, 201, 207, 0.411);
+  padding-bottom: 20px;
+}
+.tiNgpaddingone{
+ padding-left: 0;
+ padding-right: 0;
+}
+
 @media(max-width: 567px){
   .tGButton{
     margin-top: 145%;
+  }
+  .tGButtonNg{
+    margin-top: 130%;
   }
   .marginTG{
     margin-left: 23%;
@@ -131,11 +146,17 @@ border-radius: 5px;
   .tGButton{
     margin-top: 115%;
   }
+  .tGButtonNg{
+    margin-top: 113.5%;
+  }
  
 }
 @media(min-width: 568px) and (max-width: 768px){
   .tGButton{
     margin-top: 146%;
+  }
+  .tGButtonNg{
+    margin-top: 143.5%;
   }
  
 }
