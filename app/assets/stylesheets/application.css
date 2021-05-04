@@ -72,11 +72,11 @@ nav a ,div a{
 .dpn-content {
   display: none;
   position: absolute;
-  background-color: #007bff;
+  background-color: #3778c2;
   min-width: 300px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
   z-index: 1;
-  height: 93.5vh;
+  height: 90vh;
 }
 
 /* Links inside the dpn */
@@ -99,11 +99,21 @@ nav a ,div a{
   font-size: 1.5rem;
 }
 .transactionImg{
-width: 50%;
+width: 80%;
 }
 .tGButton{
-  margin-top: 38%;
+  margin-top: 37%;
+
 }
+.tGButton a{
+border: 1px solid white;
+padding: 10px;
+border-radius: 5px;
+}
+.imagediv{
+  width: 30%;
+}
+
 @media(max-width: 567px){
   .tGButton{
     margin-top: 145%;
@@ -111,6 +121,11 @@ width: 50%;
   .marginTG{
     margin-left: 23%;
   }
+.transactionImg{
+  width: 90%;
+  height: 100px;
+}
+  
 }
 @media(min-width: 767px) and (max-width: 1024px){
   .tGButton{
