@@ -21,13 +21,17 @@
   </div>
 </section>
 <section class="d-flex justify-content-between container-fluid  py-3 mt-3  bg-white  w-100 tisectiontwo">
+  <% @groups.each do |group| %>
   <div class="d-flex justify-content-between align-items-center">
-  <div class=" imagediv">   <%= image_tag(current_user.avatar,class:"transactionImg rounded ") %>
+   <% if group.avatar.attached? %>
+     <div class=" imagediv">   <%= image_tag(group.avatar,class:"transactionImg rounded ") %>
+  <% end %>
+ 
   </div>
   
     <div class="d-flex flex-column justify-content-between  w-100">
-      <div> <span class="text-success ml-1 ">Name:</span> <span>first transaction</span></div>
-      <div><span class="text-success ml-1 ">Date created:</span><span>12-02-2020 monday 3rd</span></div>
+      <div> <span class="text-success ml-1 ">Name:</span> <span><%=group.name%></span></div>
+      <div><span class="text-success ml-1 ">Date created:</span><span> <%= group.created_at.strftime('%d %b %Y')%></span></div>
       <div class="transactionGroupCreato">
       </div>
     </div>
@@ -35,10 +39,12 @@
   <div class="amount">
  
   <div>Created by:</div>
-  <div> Blanco</div>
+  <div> <%=group.name%><</div>
   </div>
+  <% end %>
+  
   </section>
 </section>
- <div class="bg-success py-3 tGButton text-center">
+ <div class="fivefb py-3 tGButton text-center">
         <%= link_to 'new transaction' , class:'btn btn-transact text-white  border w-50 py-3 ' %>
 </div>
