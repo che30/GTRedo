@@ -3,8 +3,11 @@ Rails.application.routes.draw do
   devise_scope :user do
     root to: "devise/sessions#new"
   end
+  get '/externaltransactions', to: 'externaltransactions#index'
+  get '/externaltransactions/:id', to: 'externaltransactions#show'
   resources :users
   resources :transactions
   resources :groups
+
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
 end

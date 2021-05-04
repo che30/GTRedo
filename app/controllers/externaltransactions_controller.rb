@@ -1,0 +1,2 @@
+class ExternaltransactionsController < ApplicationController
+end
