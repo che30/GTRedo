@@ -26,7 +26,8 @@
       <%= content_for :transactionGroups %>
       <% elsif content_for? :transactionNoGroups %>
       <%= content_for :transactionNoGroups %>
-     
+      <% elsif content_for? :Groups %>
+      <%= content_for :Groups %>
     <% end %>
    
     
