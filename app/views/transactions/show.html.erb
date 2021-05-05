@@ -1,0 +1,18 @@
+<% content_for :TransactionDetails do %>
+<nav class="NavBackGround d-flex py-1 align-items-center">
+<div><i class="fa fa-arrow-left text-white display-6"></i></div>
+<div class="text-white marginLogin ">Details</div></nav>
+<% end %>
+<section class="container d-flex flex-column justify-content-around align-items-center align-content-center mt-5">
+
+    <div class="d-flex align-content-center align-items-center">
+      <div><i class=" display-1 default-transaction <%="#{default_transaction}"%>"></i></div>
+      <div><%=@transaction.name%></div>
+    </div>
+    <div>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Debitis ratione mollitia reiciendis est, ipsam, harum perferendis natus,
+       fuga cum illo delectus? Error et blanditiis amet magnam id dolore similique sunt?
+  </div>
+  
+</section>

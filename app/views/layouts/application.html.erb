@@ -30,6 +30,10 @@
       <%= content_for :Groups %>
       <% elsif content_for? :NewGroups %>
       <%= content_for :NewGroups %>
+      <% elsif content_for? :NewTransaction %>
+      <%= content_for :NewTransaction %>
+      <% elsif content_for? :TransactionDetails %>
+      <%= content_for :TransactionDetails %>
     <% end %>
    
     
