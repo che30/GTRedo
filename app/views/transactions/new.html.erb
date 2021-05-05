@@ -25,7 +25,7 @@
     </div>
 
     <div class="field form-group mt-2 mb-3">
-     <%= collection_select(:transaction, :group, Group.all, :id, :name, { :prompt=> 'Group' }, class:
+     <%= collection_select(:transaction, :group_id, Group.all, :id, :name, { :prompt=> 'Group' }, class:
     "form-control my-3  " )%>
     </div>
   

@@ -11,4 +11,8 @@ module TransactionsHelper
   'fa fa-group'
   end
   
+  def tesmethod
+    transaction =current_user.transactions.includes(:group).where.not(group_id: nil).order('created_at DESC')
+    
+  end
 end

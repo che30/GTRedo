@@ -7,7 +7,8 @@
 
     <div class="d-flex align-content-center align-items-center">
       <div><i class=" display-1 default-transaction <%="#{default_transaction}"%>"></i></div>
-      <div><%=@transaction.name%></div>
+    
+      <div class="ml-5"><%=@transaction.name%></div>
     </div>
     <div>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. 
@@ -16,3 +17,7 @@
   </div>
   
 </section>
+<p> <%= @transaction.group %> </p>
+<div class="fivefb py-3 tGButton text-center">
+  <%= link_to 'new transaction', new_transaction_path , class:'btn btn-transact text-white  border w-50 py-3 ' %>
+</div>
