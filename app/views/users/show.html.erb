@@ -15,9 +15,9 @@
 <p><%= @user.name %></p>
   </section>
 <section class="d-flex flex-column usSectiontwo ">
-    <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle"><i class="fa fa-group"></i></p> <p class="usMl-u">All My Groups</p> </div>
-    <div class="text-white d-flex justify-content-start align-items-center align-items-center "><p class="usMlOne-u rounded-circle"> <i class="fa fa-bank"></i></p> <p class="usMl-u">All My  Transactions</p></div>
-     <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle">  <i class="fa fa-object-group"></i></p><p class="usMl-u"> My External Transactions</p></div>
+    <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle"><i class="fa fa-group"></i></p> <p class="usMl-u"> <%= link_to 'All groups',groups_path %> </p> </div>
+    <div class="text-white d-flex justify-content-start align-items-center align-items-center "><p class="usMlOne-u rounded-circle"> <i class="fa fa-bank"></i></p> <p class="usMl-u"><%= link_to 'All my transactions',transactions_path %> </p></div>
+     <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle">  <i class="fa fa-object-group"></i></p><p class="usMl-u"> <%= link_to 'All my external transactions ',externaltransactions_path %> </p></div>
         <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle"> <i class="fa fa-paper-plane-o"></i></p> <p class="usMl-u">Logout</p></div>
    
 </section>

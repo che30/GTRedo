@@ -12,7 +12,9 @@ module TransactionsHelper
   end
   
   def tesmethod
-    transaction =current_user.transactions.includes(:group).where.not(group_id: nil).order('created_at DESC')
-    
+    transaction =current_user.transactions.includes(:group).where.not(group_id: nil).order('created_at DESC').first
+   if transaction.group.avatar.attached?
+   'd-none'
+   end
   end
 end
