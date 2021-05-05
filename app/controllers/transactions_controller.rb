@@ -6,6 +6,7 @@ class TransactionsController < ApplicationController
 
   def index
     @transactions = current_user.transactions.includes(:group).where.not(group_id: nil).order('created_at DESC')
+    session[:http_referer] = request.env["HTTP_REFERER"] || @transaction_url
   end
 
   def show
@@ -16,7 +17,6 @@ class TransactionsController < ApplicationController
     @transaction = current_user.transactions.build(transaction_params)
     if @transaction.save
       flash[:notice] = 'transaction was succesffuly created'
-      session[:new_transaction_page]=request.env['HTTP_REFERER'] || @transaction_url
       redirect_to @transaction
     else
       flash.now[:danger] = 'there are some errors with some fields'

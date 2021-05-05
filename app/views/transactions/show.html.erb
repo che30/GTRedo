@@ -1,10 +1,14 @@
 <% content_for :TransactionDetails do %>
 <nav class="NavBackGround d-flex py-1 align-items-center">
   
-  <% if session[:new_transaction_page]  %>
-   <div> <%= link_to 'back', session[:new_transaction_page],class:"text-decoration-none" %></div>
-  <% end %>
-  
+  <% if session[:http_referer]  %>
+  <%= link_to session[:http_referer] do %>
+  <i class="fa fa-arrow-left text-white display-6"></i>
+   
+<% end %>
+   
+   <% end %>
+   
   
 
 <div class="text-white marginLogin ">Details</div></nav>
