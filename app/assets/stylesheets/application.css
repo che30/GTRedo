@@ -101,13 +101,17 @@ nav a ,div a{
 .transactionImg{
 width: 80%;
 }
-.tGButton{
-  margin-top: 37%;
+.tGButton,.tGButtonNg{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
 
 }
-.tGButtonNg{
+/* .tGButtonNg{
   margin-top: 35.5%;
-}
+} */
 .tGButton a,.tGButtonNg a{
 border: 1px solid white;
 padding: 10px;
@@ -130,12 +134,12 @@ border-radius: 5px;
 }
 
 @media(max-width: 567px){
-  .tGButton{
+  /* .tGButton{
     margin-top: 145%;
   }
   .tGButtonNg{
     margin-top: 130%;
-  }
+  } */
   .marginTG{
     margin-left: 23%;
   }
@@ -146,20 +150,20 @@ border-radius: 5px;
   
 }
 @media(min-width: 767px) and (max-width: 1024px){
-  .tGButton{
+  /* .tGButton{
     margin-top: 115%;
   }
   .tGButtonNg{
     margin-top: 113.5%;
-  }
+  } */
  
 }
 @media(min-width: 568px) and (max-width: 768px){
-  .tGButton{
+  /* .tGButton{
     margin-top: 146%;
   }
   .tGButtonNg{
     margin-top: 143.5%;
-  }
+  } */
  
 }
