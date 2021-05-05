@@ -16,6 +16,7 @@ class TransactionsController < ApplicationController
     @transaction = current_user.transactions.build(transaction_params)
     if @transaction.save
       flash[:notice] = 'transaction was succesffuly created'
+      session[:new_transaction_page]=request.env['HTTP_REFERER'] || @transaction_url
       redirect_to @transaction
     else
       flash.now[:danger] = 'there are some errors with some fields'
@@ -26,6 +27,6 @@ class TransactionsController < ApplicationController
   private
 
   def transaction_params
-    params.require(:transaction).permit(:name, :amount, :group_id)
+    params.require(:transaction).permit(:name, :amount, :group_id,:description)
   end
 end

@@ -17,4 +17,9 @@ module TransactionsHelper
    'd-none'
    end
   end
+  def sum_amount(transactions)
+    sum = 0
+    transactions&.each { |t| sum += t.amount }
+    sum
+  end
 end

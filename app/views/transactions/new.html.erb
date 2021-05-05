@@ -23,6 +23,9 @@
     <div class="field form-group mt-2 mb-3">
       <%= f.number_field :amount,class: 'form-control ' ,placeholder: "Amount" %>
     </div>
+    <div class="field form-group mt-2 mb-3">
+      <%= f.text_field :description,class: 'form-control ' ,placeholder: "description" %>
+    </div>
 
     <div class="field form-group mt-2 mb-3">
      <%= collection_select(:transaction, :group_id, Group.all, :id, :name, { :prompt=> 'Group' }, class:
