@@ -13,25 +13,25 @@
 
 <div class="text-white marginLogin ">Details</div></nav>
 <% end %>
-<section class="container d-flex flex-column justify-content-around align-items-center align-content-center mt-5">
+<section class="container d-flex  justify-content-around align-items-center align-content-center mt-5">
 
-    <div class="d-flex align-content-center align-items-center">
-      <div class="<%="#{tesmethod}"%>"><i class=" display-1 default-transaction <%="#{default_transaction } "%> "></i></div>
-      <%= image_tag(@transaction.group.avatar,class:"w-25 rounded ") %>
-      <div class="tsd"><%=@transaction.name%></div>
+  <div class="card" style="width: 18rem;">
+    <div class="<%="#{tesmethod}"%>"><i class=" display-1 default-transaction <%="#{default_transaction } "%> "></i>
     </div>
-    <div>
-      <%=  @transaction.description %>
-  </div>
-  <div class=" d-flex justify-content-between py-3">
-    <div class="ml-2">
-      <span> Transaction No.<%=@transaction.id%></span>
+      <%= image_tag(@transaction.group.avatar,class:" rounded ") %>
+    <div class="card-body">
+      <div ><span >transaction name:</span>
+        <span ><%=@transaction.name%></span>
+      </div>
+      <div>
+        <span class="mr-2">transaction description:</span> <%=  @transaction.description %>
     </div>
     <div class="mr-3">
- <span>Date created <br> <%=@transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></span>
+      <span class="mr-2">Date created :<%=@transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></span>
+    </div>
     </div>
   </div>
-  
+   
 </section>
 <div class="fivefb py-3 tGButton text-center">
   <%= link_to 'new transaction', new_transaction_path , class:'btn btn-transact text-white  border w-50 py-3 ' %>
