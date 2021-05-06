@@ -1,0 +1,11 @@
+
+  <div class="dpn">
+    <button class="dpbtn"><i class="fa fa-navicon"></i></button>
+    <div class="dpn-content">
+   <%= link_to current_user.name, current_user %>
+      <%= link_to 'All my transactions',transactions_path%>
+      <%= link_to 'All my external transactions',externaltransactions_path %>
+      <%= link_to 'All groups',groups_path%>
+      <%= link_to 'logout',destroy_user_session_path, method: :delete %>
+    </div>
+  </div>
