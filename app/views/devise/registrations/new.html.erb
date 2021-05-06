@@ -1,7 +1,10 @@
 
 <% content_for :signup do %>
 <nav class="NavBackGround d-flex py-1 align-items-center">
-<div><i class="fa fa-arrow-left text-white display-6 "></i></div>
+ <%= link_to home_path do %>
+  <i class="fa fa-arrow-left text-white display-6"></i>
+   
+<% end %>
 <div class="text-white marginLogin ">Sign Up</div></nav>
 <% end %>
 <div class="form w-50 mx-auto mt-2">
