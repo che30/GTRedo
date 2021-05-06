@@ -3,7 +3,7 @@ Rails.application.routes.draw do
   devise_scope :user do
     root to: "devise/sessions#new"
   end
-  get '/externaltransactions', to: 'externaltransactions#index'
+  get '/externaltransactions', to: 'externaltransactions#external'
   get '/externaltransactions/:id', to: 'externaltransactions#show'
   resources :users
   resources :transactions

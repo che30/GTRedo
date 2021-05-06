@@ -20,24 +20,36 @@
 <section class="transactionGroup  pt-3 ">
   <div class="d-flex justify-content-between container-fluid bg-white py-2 tiNgpaddingone">
     <div>Total  amount</div>
-    <div> <span>$</span> 400</div>
+    <div> <span>$</span><%=sum_amount(@transactions)%></div>
   </div>
 </section>
+<% if @transactions %>
 <section class="d-flex justify-content-between container-fluid  py-3 mt-3 w-100 tiNgsectiontwo bg-white">
-    <div class="d-flex flex-column justify-content-between  w-100">
+ 
+
+   
+  <% @transactions.each do |transaction| %>
+  <%= link_to(transaction_url(transaction.id), class: "text-decoration-none text-dark") do %>
+  <div class="d-flex flex-column justify-content-between  w-100">
       <div> <span class="text-success ml-1 ">Name:</span> <span>first transaction</span></div>
       <div><span class="text-success ml-1 ">Date created:</span><span>12-02-2020 monday 3rd</span></div>
       <div class="transactionGroupCreato">
       <span class="text-success">Creator:</span> <span>Blanco</span>
       </div>
     </div>
-</div>
   <div class="amount">
  
-  <span> <span>$</span><span>100</span></span>
+  <span> <span>$</span><span><%=transaction.amount%></span></span>
   </div>
+  
+  <% end %>
+  
+  <% end %>
+
+  
   </section>
+  <% end %>
 </section>
  <div class="fivefb py-3 tGButtonNg text-center">
-        <%= link_to 'new transaction' , class:'btn btn-transact text-white  border w-50 py-3 ' %>
+        <%= link_to 'new transaction' ,new_transaction_path , class:'btn btn-transact text-white  border w-50 py-3 ' %>
 </div>

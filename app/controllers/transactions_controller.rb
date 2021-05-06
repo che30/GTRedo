@@ -1,5 +1,7 @@
 class TransactionsController < ApplicationController
-  
+  def external
+    @transactions = Transaction.where(group_id: nil)
+  end
   def new
     @transaction = Transaction.new
   end
