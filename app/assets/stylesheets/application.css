@@ -37,6 +37,9 @@ background-color: #3778c2;
   width: 300px;
   padding-bottom: 13px;
 }
+.cookie-cursive {
+  font-family: 'Cookie', cursive;
+}
 .usMl-u{
   margin-left: 20px;
 }
@@ -61,7 +64,11 @@ nav a ,div a{
   border-radius: 5px;
   cursor: pointer;
 }
-
+.bg-grey{
+  background-color: rgba(218, 211, 211, 0.89);
+  height: 100vh; 
+    padding-top: 200px; 
+}
 /* The container <div> - needed to position the dpn content */
 .dpn {
   position: relative;
@@ -121,9 +128,7 @@ width: 80%;
 .tsd{
   margin-left: 10%;
 }
-/* .tGButtonNg{
-  margin-top: 35.5%;
-} */
+
 .tGButton a,.tGButtonNg a{
 border: 1px solid white;
 padding: 10px;
@@ -146,12 +151,7 @@ border-radius: 5px;
 }
 
 @media(max-width: 567px){
-  /* .tGButton{
-    margin-top: 145%;
-  }
-  .tGButtonNg{
-    margin-top: 130%;
-  } */
+
   .marginTG{
     margin-left: 23%;
   }
@@ -162,20 +162,14 @@ border-radius: 5px;
   
 }
 @media(min-width: 767px) and (max-width: 1024px){
-  /* .tGButton{
-    margin-top: 115%;
+ 
+  .bg-grey{
+ 
+    
+     padding-bottom: 700px; 
   }
-  .tGButtonNg{
-    margin-top: 113.5%;
-  } */
  
 }
 @media(min-width: 568px) and (max-width: 768px){
-  /* .tGButton{
-    margin-top: 146%;
-  }
-  .tGButtonNg{
-    margin-top: 143.5%;
-  } */
- 
+
 }

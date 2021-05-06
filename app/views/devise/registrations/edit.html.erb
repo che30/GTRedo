@@ -1,6 +1,19 @@
 
 <% content_for :edit do %>
-<nav class=" NavBackGround " ><h2 class="text-white text-center">Edit <%= resource_name.to_s.humanize %></h2></nav>
+<nav class="NavBackGround d-flex py-1 align-items-center">
+  
+  <% if session[:http_referer_show]  %>
+  <%= link_to session[:http_referer_show] do %>
+  <i class="fa fa-arrow-left text-white display-6"></i>
+   
+<% end %>
+   
+   <% end %>
+   
+  
+
+<div class="text-white marginLogin ">Edit <%= resource_name.to_s.humanize %></div></nav>
+
 <% end %>
 
 <div class="mx-auto w-50">

@@ -5,5 +5,6 @@ class UsersController < ApplicationController
 
   def show
     @user = User.find_by(params[:email])
+    session[:http_referer_show] = request.env['HTTP_REFERER']
   end
 end
