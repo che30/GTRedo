@@ -1,6 +1,8 @@
 <div class="text-center us text-white d-flex flex-column align-items-center align-content-center  justify-content-center">
   <section class="usSectionOne">
-   <p class="<%="#{image_unavailable?}"%> text-white display-1 "> <%= link_to edit_user_registration_path(current_user),class:"text-white" do %>
+   <p class="<%="#{image_unavailable?}"%>
+      text-white display-x ">
+       <%= link_to edit_user_registration_path(current_user),class:"text-white" do %>
  <i class="<%="#{user_avatar}"%>"></i>
 <% end %></p>
 <p class="<%="#{image_available?} "%> "><%= link_to edit_user_registration_path(current_user),class:"text-white" do %>
@@ -15,11 +17,24 @@
 <p><%= @user.name %></p>
   </section>
 <section class="d-flex flex-column usSectiontwo ">
-    <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle"><i class="fa fa-group"></i></p> <p class="usMl-u"> <%= link_to 'All groups',groups_path %> </p> </div>
-    <div class="text-white d-flex justify-content-start align-items-center align-items-center "><p class="usMlOne-u rounded-circle"> <i class="fa fa-bank"></i></p> <p class="usMl-u"><%= link_to 'All my transactions',transactions_path %> </p></div>
-     <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle">  <i class="fa fa-object-group"></i></p><p class="usMl-u"> <%= link_to 'All my external transactions ',externaltransactions_path %> </p></div>
-        <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle"> <i class="fa fa-paper-plane-o"></i></p> <p class="usMl-u"></p><%= link_to 'back ',home_path %></div>
-        <div class="text-white d-flex justify-content-start align-items-center align-content-center"><p class="usMlOne-u rounded-circle"> <i class="fa fa-sign-out"></i></p> <p class="usMl-u"></p><%= link_to 'logout ',destroy_user_session_path, method: :delete%></div>
-   
+    <div class="text-white d-flex justify-content-start align-items-center usMlUone align-content-center">
+      <p class="usMlOne-u rounded-circle"><i class="fa fa-group "></i></p>
+       <p class="usMl-u"> 
+        <%= link_to 'All groups',groups_path %> </p> </div>
+    <div class="text-white d-flex justify-content-start align-items-center align-items-center ">
+      <p class="usMlOne-u rounded-circle"> <i class="fa fa-bank"></i></p>
+       <p class="usMl-u"><%= link_to 'All my transactions',transactions_path %> </p></div>
+     <div class="text-white d-flex justify-content-start align-items-center align-content-center">
+       <p class="usMlOne-u rounded-circle">  <i class="fa fa-object-group"></i></p><p class="usMl-u"> 
+         <%= link_to 'All my external transactions ',externaltransactions_path %> </p></div>
+
+         <div class="text-white d-flex justify-content-start align-items-center align-content-center">
+          <p class="usMlOne-u rounded-circle">  <i class="fa fa-arrow-left"></i></p><p class="usMl-u"> 
+            <%= link_to 'back ',home_path %> </p></div>
+
+            <div class="text-white d-flex justify-content-start align-items-center align-content-center">
+              <p class="usMlOne-u rounded-circle">  <i class="fa fa-sign-out"></i></p><p class="usMl-u"> 
+                <%= link_to 'logout ',destroy_user_session_path, method: :delete %> </p></div>
+        
 </section>
 </div>

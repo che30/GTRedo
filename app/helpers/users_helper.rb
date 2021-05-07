@@ -1,6 +1,6 @@
 module UsersHelper
   def user_avatar
-    'fa fa-user-circle'
+    'fa fa-user-circle '
   end
 
   def image_available?

@@ -17,8 +17,15 @@
   margin-left: 43%;
   font-size: 1.5rem;
 }
+.marginLogins{
+  margin-left: 43%;
+  font-size: 1.5rem;
+}
 .NavBackGround {
 background-color: #3778c2;
+}
+.form{
+  width: 50%;
 }
 .us{
   height: 100vh;
@@ -35,7 +42,7 @@ background-color: #3778c2;
 .usSectiontwo div{
   border-bottom: 1px solid white;
   width: 300px;
-  padding-bottom: 13px;
+  /* padding-bottom: 13px; */
 }
 .cookie-cursive {
   font-family: 'Cookie', cursive;
@@ -53,7 +60,7 @@ height: 100px;
 }
 nav a ,div a{
   text-decoration: none;
-  color: white;
+  /* color: white; */
 }
 .dpbtn {
   background-color: #3778c2;;
@@ -79,7 +86,9 @@ nav a ,div a{
   position: relative;
   display: inline-block;
 }
-
+.display-x{
+  font-size: 150px;
+}
 /* dpn Content (Hidden by Default) */
 .dpn-content {
   display: none;
@@ -164,7 +173,18 @@ border-radius: 5px;
   width: 90%;
   height: 100px;
 }
-  
+.marginLogin{
+  margin-left: 38%;
+ 
+}
+.marginLogins{
+  margin-left: 30%;
+  font-size: 1.5rem;
+ 
+}
+.form{
+  width: 75%;
+}
 }
 @media(min-width: 767px) and (max-width: 1024px){
  
