@@ -118,7 +118,7 @@ color: white;
 .dpn:hover .dpn-content {
   display: block;
 }
-.marginTG{
+.marginTG,.marginTGs{
   margin-left: 40%;
   font-size: 1.5rem;
 }
@@ -135,9 +135,9 @@ width: 80%;
 }
 .default-transaction{
   color: #5fb523;
-  border:1px solid rgb(207, 39, 137);
   border-radius: 3px;
-  font-size: 100px;
+  font-size: 1000px;
+  padding-left: 120px;
 }
 .tsd{
   margin-left: 10%;
@@ -167,7 +167,10 @@ border-radius: 5px;
 @media(max-width: 567px){
 
   .marginTG{
-    margin-left: 23%;
+    margin-left: 15%;
+  }
+  .marginTGs{
+    margin-left: 25%;
   }
 .transactionImg{
   width: 90%;

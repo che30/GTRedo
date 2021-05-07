@@ -13,9 +13,18 @@ module TransactionsHelper
   
   def tesmethod
     transaction =current_user.transactions.includes(:group).where.not(group_id: nil).order('created_at DESC').first
-   if transaction.group.avatar.attached?
+   
+    if transaction && transaction.group.avatar.attached?
    'd-none'
    end
+  end
+  def check_image?(transaction)
+    if transaction.group
+      transaction.group.avatar
+      else
+        '<i class="fa fa-group">'
+    end
+    
   end
   def sum_amount(transactions)
     sum = 0
