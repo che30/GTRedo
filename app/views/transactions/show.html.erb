@@ -10,14 +10,17 @@
    <% end %>
    
   
-   <% flash.each do | msg| %>
-   <div class="alert alert-info text-center">
-     <%= msg %>
-   </div>
- <% end %>
+ 
+  
 <div class="text-white marginLogin ">Details</div></nav>
 <% end %>
 <section class="top-common-margins container    ">
+ <% if flash[:notice] %>
+    
+   <div class="alert alert-info text-center mt-5">
+     <%= flash[:notice] %>
+   </div>
+  <% end %>
   <div class="d-flex justify-content-center align-items-center align-content-center">
     <div class="text-success " >Transaction name:</div>
     <h3 ><%=@transaction.name%></h3>
