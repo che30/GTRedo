@@ -1,4 +1,5 @@
 class TransactionsController < ApplicationController
+  before_action :authenticate_user!,only: [:index,:show,:new]
   def new
     @transaction = Transaction.new
   end

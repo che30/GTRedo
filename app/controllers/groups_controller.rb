@@ -1,4 +1,5 @@
 class GroupsController < ApplicationController
+  before_action :authenticate_user!,only: [:show,:index,:new]
   def index
     @groups = Group.all.order(name: 'ASC')
   end
