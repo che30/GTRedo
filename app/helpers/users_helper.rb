@@ -18,5 +18,4 @@ module UsersHelper
       'd-block'
     end
   end
-
 end

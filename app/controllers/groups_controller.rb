@@ -1,12 +1,13 @@
 class GroupsController < ApplicationController
-  before_action :authenticate_user!,only: [:show,:index,:new]
+  before_action :authenticate_user!, only: %i[show index new]
   def index
     @groups = Group.all.order(name: 'ASC')
   end
 
   def new
-    @group = Group.new 
+    @group = Group.new
   end
+
   def create
     @group = current_user.groups.build(group_params)
     if @group.save
@@ -28,5 +29,4 @@ class GroupsController < ApplicationController
   def group_params
     params.require(:group).permit(:name, :avatar)
   end
-
 end
