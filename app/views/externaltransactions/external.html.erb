@@ -21,7 +21,7 @@
    
   <% @transactions.each do |transaction| %>
   <%= link_to(transaction_url(transaction.id), class: "text-decoration-none text-dark") do %>
-  <div class="d-flex bg-white py-3 justify-content-between mx-2 container-fluid w-100">
+  <div class="d-flex bg-white py-3 container-fluid justify-content-between mx-2  w-100">
       <div>  <span><%=transaction.name%> <br>
       <span class="mr-2 text-success">amount:</span>$<span><%=transaction.amount%></span></div>
       <div><span><%=transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></span></div>
