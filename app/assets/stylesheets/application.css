@@ -26,6 +26,7 @@ background-color: #3778c2;
 }
 .form{
   width: 50%;
+  margin-top: 80px;
 }
 .us{
   height: 100vh;
@@ -216,6 +217,7 @@ border-radius: 5px;
 }
 .form{
   width: 75%;
+
 }
 }
 @media(min-width: 767px) and (max-width: 1024px){
