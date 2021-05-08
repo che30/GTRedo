@@ -31,6 +31,29 @@ background-color: #3778c2;
   height: 100vh;
   background-color: #3778c2;
 }
+nav{
+  position: fixed; 
+  top: 0; 
+  width: 100%; 
+  z-index: 1;
+
+}
+
+.top-common-margin {
+  margin-top: 65px;
+}
+.top-common-margins {
+  margin-top: 100px;
+}
+.top-common-marginsg {
+  margin-top: 50px;
+}
+.top-common-margint{
+  margin-top: 20px;
+}
+.mb-c{
+  margin-bottom: 100px;
+}
 .usSectionOne{
  padding-bottom: 25px;
 }
@@ -133,6 +156,9 @@ width: 80%;
   z-index: 1;
 
 }
+.space-margin{
+  color: rgba(243, 243, 243, 0.411);
+}
 .default-transaction{
   color: #5fb523;
   border-radius: 3px;
@@ -150,6 +176,9 @@ border-radius: 5px;
 }
 .imagediv{
   width: 30%;
+}
+.mg-t{
+  margin-top: 80px;
 }
 
 .main-section{

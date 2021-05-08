@@ -13,17 +13,17 @@
 
 <div class="text-white marginLogin ">Details</div></nav>
 <% end %>
-<section class="container d-flex  justify-content-around align-items-center align-content-center mt-5">
+<section class="top-common-margins container d-flex  justify-content-around align-items-center align-content-center ">
 
   <div class="card" >
     <div class="<%="#{tesmethod}"%>"><i class=" display-1 default-transaction <%="#{default_transaction } "%> "></i>
     </div>
     
     <% if @transaction.group %>
-       <%= image_tag(check_image?(@transaction),class:" rounded ") %>
+       <%= image_tag(check_image?(@transaction),class:"w-25  ") %>
     <% end %>
      
-    <div class="card-body">
+    <div class="card-body w-25">
       <div ><span >transaction name:</span>
         <span ><%=@transaction.name%></span>
       </div>

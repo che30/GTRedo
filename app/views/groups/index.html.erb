@@ -5,34 +5,37 @@
 <div class="text-white marginTGs ">Groups</div>
 </nav>
 <% end %>
-<section class="main-section">
+<section class="main-section mb-c">
 
 
-<section class="transactionGroup  pt-3">
-  </div>
+<section class="transactionGroup mt-5 text-white">
+ just for help
 </section>
-<section class="d-flex justify-content-between container-fluid  py-3 mt-3  bg-white  w-100 tisectiontwo">
+<section class="d-flex flex-column mt-3  container-fluid       w-100 ">
   
   <% @groups.each do |group| %>
-  <div class="d-flex justify-content-between align-items-center">
+  <div class="d-flex justify-content-between bg-white align-items-center  py-3  mb-5">
    <% if group.avatar.attached? %>
      <div class=" imagediv">   <%= image_tag(group.avatar,class:"transactionImg rounded ") %>
+     </div>
   <% end %>
  
-  </div>
+ 
   
     <div class="d-flex flex-column justify-content-between  w-100">
-      <div> <span class="text-success ml-1 ">Name:</span> <span><%=group.name%></span></div>
+      <div class="d-flex"> <span class="text-success  ">Name:</span> 
+        <span class="ml-5 pl-5 w-100"><%=group.name%></span></div>
       <div><span class="text-success ml-1 ">Date created:</span><span> <%= group.created_at.strftime('%d %b %Y')%></span></div>
       <div class="transactionGroupCreato">
       </div>
     </div>
-</div>
-  <div class="amount">
+    <div class="amount">
  
-  <div>Created by:</div>
-  <div> <%=group.user.name%></div>
-  </div>
+      <div>Created by:</div>
+      <div> <%=group.user.name%></div>
+      </div>
+</div>
+  
   <% end %>
   
   </section>
