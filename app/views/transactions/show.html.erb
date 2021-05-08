@@ -10,7 +10,11 @@
    <% end %>
    
   
-
+   <% flash.each do | msg| %>
+   <div class="alert alert-info text-center">
+     <%= msg %>
+   </div>
+ <% end %>
 <div class="text-white marginLogin ">Details</div></nav>
 <% end %>
 <section class="top-common-margins container    ">

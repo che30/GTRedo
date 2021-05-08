@@ -5,9 +5,21 @@
 </nav>
 <% end %>
 
+
 <div class=" w-50 mx-auto top-common-margins">
   <%= form_for @group, html: { class: "mt-5 mx-3" } do |f| %>
+  <% if flash[:danger] %>
   
+    <ul class ="alert alert-danger text-center">
+      <% @group.errors.full_messages.each do |msg| %>
+      <li class="list-unstyled text-success"> 
+        <%= msg%>
+      </li>
+      <%end%>
+    </ul>
+   
+
+<% end %>
    <div class="form-group mt-2 mb-3">
     <%= f.text_field :name, class: "form-control mb-3", placeholder: "Name" %>
    </div>

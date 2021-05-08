@@ -8,7 +8,7 @@
 <div class="text-white marginLogin ">Login</div></nav>
 <% end %>
 
-<div class="form  mx-auto ">
+<div class="form  mx-auto">
   <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field form-group">
     <%= f.label :email %><br />
@@ -30,6 +30,7 @@
   <div class="actions form-group mb-3">
     <%= f.submit "Log in",class:"btn btn-primary" %>
   </div>
+  <%= render "devise/shared/error_messages", resource: resource %>
   <% end %>
 
 

@@ -5,6 +5,11 @@
 <div class="text-white marginTGs ">Groups</div>
 </nav>
 <% end %>
+<% flash.each do |msg| %>
+  <div class="alert alert-info text-center">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 <section class="main-section mb-c">
 
 

@@ -1,3 +1,8 @@
+<% if flash.notice %>
+  <div class="alert alert-info text-center">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
 <div class="text-center us text-white d-flex flex-column align-items-center align-content-center  justify-content-center">
   <section class="usSectionOne">
    <p class="<%="#{image_unavailable?}"%>

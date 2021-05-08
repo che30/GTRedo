@@ -13,7 +13,7 @@ class GroupsController < ApplicationController
       flash[:notice] = 'group created with succes'
       redirect_to groups_path
     else
-      flash.now[:alert] = 'there are some errors while saving the form'
+      flash.now[:danger] = 'there are some errors while saving the form'
       render 'new'
     end
   end
