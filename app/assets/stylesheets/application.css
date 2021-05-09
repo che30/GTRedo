@@ -125,7 +125,8 @@ nav {
 }
 
 .usProfileImgHeight {
-  height: 100px;
+  width: 15%;
+  height: 150px;
 }
 
 nav a,
