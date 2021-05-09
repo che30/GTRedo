@@ -13,7 +13,7 @@
  *= require_tree .
  *= require_self
  */
- @font-face {
+@font-face {
   font-family: 'FontsFree-Net-Proxima-Nova-Bold';
   src: url("/assets/FontsFree-Net-Proxima-Nova-Bold.otf");
 }
@@ -34,90 +34,109 @@
 
 body {
   font-family: 'FontsFree-Net-Proxima-Nova-Bold', 'proximanova-light', arial, sans-serif;
-  
 }
-.width-25{
+
+.width-25 {
   height: 100px;
 }
-.marginLogin{
+
+.marginLogin {
   margin-left: 43%;
   font-size: 1.5rem;
 }
-.marginLogins{
+
+.marginLogins {
   margin-left: 43%;
   font-size: 1.5rem;
 }
+
 .NavBackGround {
-background-color: #3778c2;
+  background-color: #3778c2;
 }
-.form{
+
+.form {
   width: 50%;
   margin-top: 80px;
 }
-.us{
+
+.us {
   height: 100vh;
   background-color: #3778c2;
 }
-nav{
-  position: fixed; 
-  top: 0; 
-  width: 100%; 
-  z-index: 1;
 
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
 }
-.form-p{
+
+.form-p {
   width: 75%;
-  
 }
 
 .top-common-margin {
   margin-top: 65px;
 }
+
 .top-common-margins {
   margin-top: 100px;
 }
+
 .top-common-marginsg {
   margin-top: 50px;
 }
-.top-common-margint{
+
+.top-common-margint {
   margin-top: 20px;
 }
-.mb-c{
+
+.mb-c {
   margin-bottom: 100px;
 }
-.usSectionOne{
- padding-bottom: 25px;
+
+.usSectionOne {
+  padding-bottom: 25px;
 }
-.usSectiontwo{
+
+.usSectiontwo {
   justify-content: space-around;
- 
   height: 300px;
 }
-.usSectiontwo div{
+
+.usSectiontwo div {
   border-bottom: 1px solid white;
   width: 300px;
+
   /* padding-bottom: 13px; */
 }
+
 .cookie-cursive {
   font-family: 'Cookie', cursive;
 }
-.usMl-u{
+
+.usMl-u {
   margin-left: 20px;
 }
-.usMlOne-u{
-  padding: 3px 8px 3px 10px;
 
+.usMlOne-u {
+  padding: 3px 8px 3px 10px;
   border: 1px solid white;
 }
-.usProfileImgHeight{
-height: 100px;
+
+.usProfileImgHeight {
+  height: 100px;
 }
-nav a ,div a{
+
+nav a,
+div a {
   text-decoration: none;
+
   /* color: white; */
 }
+
 .dpbtn {
-  background-color: #3778c2;;
+  background-color: #3778c2;
   color: white;
   padding: 10px;
   font-size: 1.5rem;
@@ -125,24 +144,29 @@ nav a ,div a{
   border-radius: 5px;
   cursor: pointer;
 }
-.bg-grey{
+
+.bg-grey {
   background-color: rgba(218, 211, 211, 0.89);
-  height: 100vh; 
-    padding-top: 200px; 
+  height: 100vh;
+  padding-top: 200px;
 }
-.login{
+
+.login {
   margin-left: 20%;
   margin-top: 20px;
   border-radius: 200px;
 }
+
 /* The container <div> - needed to position the dpn content */
 .dpn {
   position: relative;
   display: inline-block;
 }
-.display-x{
+
+.display-x {
   font-size: 150px;
 }
+
 /* dpn Content (Hidden by Default) */
 .dpn-content {
   display: none;
@@ -153,10 +177,19 @@ nav a ,div a{
   z-index: 1;
   height: 90vh;
 }
-section a{
-text-decoration: none;
-color: white;
+
+section a {
+  text-decoration: none;
+  color: white;
 }
+
+.tGButton a,
+.tGButtonNg a {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
 /* Links inside the dpn */
 .dpn-content a {
   color: white;
@@ -172,93 +205,100 @@ color: white;
 .dpn:hover .dpn-content {
   display: block;
 }
-.marginTG,.marginTGs{
+
+.marginTG,
+.marginTGs {
   margin-left: 40%;
   font-size: 1.5rem;
 }
-.transactionImg{
-width: 80%;
+
+.transactionImg {
+  width: 80%;
 }
-.tGButton,.tGButtonNg{
+
+.tGButton,
+.tGButtonNg {
   position: fixed;
   left: 0;
   bottom: 0;
   width: 100%;
   z-index: 1;
-
 }
-.space-margin{
+
+.space-margin {
   color: rgba(243, 243, 243, 0.411);
 }
-.default-transaction{
+
+.default-transaction {
   color: #5fb523;
   border-radius: 3px;
   font-size: 1000px;
   padding-left: 120px;
 }
-.tsd{
+
+.tsd {
   margin-left: 10%;
 }
 
-.tGButton a,.tGButtonNg a{
-border: 1px solid white;
-padding: 10px;
-border-radius: 5px;
-}
-.imagediv{
+/* .tGButton a,
+.tGButtonNg a {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+} */
+
+.imagediv {
   width: 30%;
 }
-.mg-t{
+
+.mg-t {
   margin-top: 80px;
 }
 
-.main-section{
+.main-section {
   background-color: rgba(203, 201, 207, 0.411);
   padding-bottom: 20px;
 }
-.tiNgpaddingone{
- padding-left: 0;
- padding-right: 0;
+
+.tiNgpaddingone {
+  padding-left: 0;
+  padding-right: 0;
 }
-.fivefb{
+
+.fivefb {
   background-color: #5fb523;
 }
 
-@media(max-width: 567px){
-
-  .marginTG{
+@media (max-width: 567px) {
+  .marginTG {
     margin-left: 15%;
   }
-  .marginTGs{
+
+  .marginTGs {
     margin-left: 25%;
   }
-.transactionImg{
-  width: 90%;
-  height: 100px;
-}
-.marginLogin{
-  margin-left: 38%;
- 
-}
-.marginLogins{
-  margin-left: 30%;
-  font-size: 1.5rem;
- 
-}
-.form{
-  width: 75%;
 
-}
-}
-@media(min-width: 767px) and (max-width: 1024px){
- 
-  .bg-grey{
- 
-    
-     padding-bottom: 700px; 
+  .transactionImg {
+    width: 90%;
+    height: 100px;
   }
- 
-}
-@media(min-width: 568px) and (max-width: 768px){
 
+  .marginLogin {
+    margin-left: 38%;
+  }
+
+  .marginLogins {
+    margin-left: 30%;
+    font-size: 1.5rem;
+  }
+
+  .form {
+    width: 75%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .bg-grey {
+    padding-bottom: 700px;
+  }
 }
