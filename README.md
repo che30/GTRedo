@@ -18,12 +18,20 @@ This project  is based on a mobile version app for grouping transactions by goal
 ![screenshot](app/assets/images/ROR-ERD.png)
 
 # App Screenshots
-![screenshot](app/assets/images/home.png)
-![screenshot](app/assets/images/login.png)
-![screenshot](app/assets/images/all_transactions.png)
+![screenshot](app/assets/images/Screenshot_20200120-012200.png)
+![screenshot](app/assets/images/Screenshot_20210509-150652.png)
+![screenshot](app/assets/images/Screenshot_20210509-150700.png)
+
+![screenshot](app/assets/images/Screenshot_20210509-150719.png)
+![screenshot](app/assets/images/Screenshot_20210509-150736.png)
+![screenshot](app/assets/images/Screenshot_20210509-150755.png)
+![screenshot](app/assets/images/Screenshot_20210509-150806.png)
+![screenshot](app/assets/images/Screenshot_20210509-150813.png)
+![screenshot](app/assets/images/Screenshot_20210509-150843.png)
+
 # Presentations
 ##  Live Demo
-[Live Demo Link](https://frozen-plateau-21154.herokuapp.com/)
+[Live Demo Link](https://mighty-basin-44341.herokuapp.com/)
 ##  Video Presentation
 [Video Presentation Link](https://www.loom.com/share/99a5c481d46242e294dd935cfe3e6591)
 ## Built With
