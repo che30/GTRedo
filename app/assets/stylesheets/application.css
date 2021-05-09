@@ -1,0 +1,304 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@font-face {
+  font-family: 'FontsFree-Net-Proxima-Nova-Bold';
+  src: url("/assets/FontsFree-Net-Proxima-Nova-Bold.otf");
+}
+
+@font-face {
+  font-family: 'proximanova-light';
+  src: url("/assets/proximanova-light.otf");
+}
+
+/* FontsFree-Net-Proxima-Nova-Light */
+.font-nova-bold {
+  font-family: 'FontsFree-Net-Proxima-Nova-Bold', arial, sans-serif;
+}
+
+.font-nova-light {
+  font-family: 'proximanova-light', arial, sans-serif;
+}
+
+body {
+  font-family: 'FontsFree-Net-Proxima-Nova-Bold', 'proximanova-light', arial, sans-serif;
+}
+
+.width-25 {
+  height: 100px;
+}
+
+.marginLogin {
+  margin-left: 43%;
+  font-size: 1.5rem;
+}
+
+.marginLogins {
+  margin-left: 43%;
+  font-size: 1.5rem;
+}
+
+.NavBackGround {
+  background-color: #3778c2;
+}
+
+.form {
+  width: 50%;
+  margin-top: 80px;
+}
+
+.us {
+  height: 100vh;
+  background-color: #3778c2;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.form-p {
+  width: 75%;
+}
+
+.top-common-margin {
+  margin-top: 65px;
+}
+
+.top-common-margins {
+  margin-top: 100px;
+}
+
+.top-common-marginsg {
+  margin-top: 50px;
+}
+
+.top-common-margint {
+  margin-top: 20px;
+}
+
+.mb-c {
+  margin-bottom: 100px;
+}
+
+.usSectionOne {
+  padding-bottom: 25px;
+}
+
+.usSectiontwo {
+  justify-content: space-around;
+  height: 300px;
+}
+
+.usSectiontwo div {
+  border-bottom: 1px solid white;
+  width: 300px;
+
+  /* padding-bottom: 13px; */
+}
+
+.cookie-cursive {
+  font-family: 'Cookie', cursive;
+}
+
+.usMl-u {
+  margin-left: 20px;
+}
+
+.usMlOne-u {
+  padding: 3px 8px 3px 10px;
+  border: 1px solid white;
+}
+
+.usProfileImgHeight {
+  height: 100px;
+}
+
+nav a,
+div a {
+  text-decoration: none;
+
+  /* color: white; */
+}
+
+.dpbtn {
+  background-color: #3778c2;
+  color: white;
+  padding: 10px;
+  font-size: 1.5rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.bg-grey {
+  background-color: rgba(218, 211, 211, 0.89);
+  height: 100vh;
+  padding-top: 200px;
+}
+
+.login {
+  margin-left: 20%;
+  margin-top: 20px;
+  border-radius: 200px;
+}
+
+/* The container <div> - needed to position the dpn content */
+.dpn {
+  position: relative;
+  display: inline-block;
+}
+
+.display-x {
+  font-size: 150px;
+}
+
+/* dpn Content (Hidden by Default) */
+.dpn-content {
+  display: none;
+  position: absolute;
+  background-color: #3778c2;
+  min-width: 300px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  height: 90vh;
+}
+
+section a {
+  text-decoration: none;
+  color: white;
+}
+
+.tGButton a,
+.tGButtonNg a {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+/* Links inside the dpn */
+.dpn-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change color of dpn links on hover */
+.dpn-content a:hover { background-color: #a8fdaf; }
+
+/* Show the dpn menu on hover */
+.dpn:hover .dpn-content {
+  display: block;
+}
+
+.marginTG,
+.marginTGs {
+  margin-left: 40%;
+  font-size: 1.5rem;
+}
+
+.transactionImg {
+  width: 80%;
+}
+
+.tGButton,
+.tGButtonNg {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.space-margin {
+  color: rgba(243, 243, 243, 0.411);
+}
+
+.default-transaction {
+  color: #5fb523;
+  border-radius: 3px;
+  font-size: 1000px;
+  padding-left: 120px;
+}
+
+.tsd {
+  margin-left: 10%;
+}
+
+/* .tGButton a,
+.tGButtonNg a {
+  border: 1px solid white;
+  padding: 10px;
+  border-radius: 5px;
+} */
+
+.imagediv {
+  width: 30%;
+}
+
+.mg-t {
+  margin-top: 80px;
+}
+
+.main-section {
+  background-color: rgba(203, 201, 207, 0.411);
+  padding-bottom: 20px;
+}
+
+.tiNgpaddingone {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.fivefb {
+  background-color: #5fb523;
+}
+
+@media (max-width: 567px) {
+  .marginTG {
+    margin-left: 15%;
+  }
+
+  .marginTGs {
+    margin-left: 25%;
+  }
+
+  .transactionImg {
+    width: 90%;
+    height: 100px;
+  }
+
+  .marginLogin {
+    margin-left: 38%;
+  }
+
+  .marginLogins {
+    margin-left: 30%;
+    font-size: 1.5rem;
+  }
+
+  .form {
+    width: 75%;
+  }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+  .bg-grey {
+    padding-bottom: 700px;
+  }
+}

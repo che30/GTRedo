@@ -1,0 +1,57 @@
+
+<% content_for :transactionGroups do %>
+<nav class="NavBackGround d-flex py-1 align-items-center">
+  <%= render 'shared/dropdown' %>
+<div class="text-white marginTG ">Transactions</div>
+</nav>
+<% end %>
+<section class="main-section mb-c">
+
+
+<section class="transactionGroup top-common-margin pt-3">
+  <div class="d-flex justify-content-between container-fluid bg-white py-2">
+    <div>Total  amount</div>
+    <div> <span>$</span> <%=sum_amount(@transactions)%></div>
+  </div>
+</section>
+<% @transactions.each do |transaction| %>
+<section class="d-flex flex-column justify-content-between container-fluid   py-3 top-common-margint  bg-white  w-100 tisectiontwo">
+
+<%= link_to(transaction_url(transaction.id), class: "text-decoration-none text-dark") do %>
+  <div class="d-flex justify-content-between align-items-center">
+  
+ 
+      
+  <div class=" imagediv">   <%= image_tag(transaction.group.avatar,class:"transactionImg rounded ") %>
+  </div>
+  
+    <div class="d-flex flex-column justify-content-between  w-100">
+      <div>  <%= transaction.name%></div>
+      <div><%=transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></div>
+      <div class="transactionGroupCreato">
+       <%=transaction.user.name%>
+      <div>
+        <%=transaction.description%>
+      </div>
+
+      </div>
+    </div>
+    <div class="amount">
+      
+       <span> <span>$</span><span><%=transaction.amount%></span></span>
+    
+      </div>
+</div>
+
+
+<% end %>
+
+</section>
+  <% end %>
+  
+
+ 
+</section>
+ <div class="fivefb py-3 tGButton text-center">
+        <%= link_to 'new transaction', new_transaction_path , class:'btn btn-transact text-white  border w-50 py-3 ' %>
+</div>

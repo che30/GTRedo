@@ -1,0 +1,46 @@
+
+<% content_for :transactionNoGroups do %>
+<nav class="NavBackGround d-flex py-1 align-items-center">
+  <%= render 'shared/dropdown' %>
+<div class="text-white marginTG ">External Transactions</div>
+</nav>
+<% end %>
+<section class="main-section mb-c">
+
+
+<section class="transactionGroup top-common-margin  pt-3 ">
+  <div class="d-flex  justify-content-between container-fluid bg-white py-2 tiNgpaddingone">
+    <div>Total  amount</div>
+    <div> <span>$</span><%=sum_amount(@transactions)%></div>
+  </div>
+</section>
+<% if @transactions %>
+<section class="d-flex flex-column justify-content-between container-fluid  py-3 mt-3 w-100 tiNgsectiontwo ">
+ 
+
+   
+  <% @transactions.each do |transaction| %>
+  <%= link_to(transaction_url(transaction.id), class: "text-decoration-none text-dark") do %>
+  <div class="d-flex bg-white py-3 container-fluid justify-content-between mx-2  w-100">
+      <div>  <span><%=transaction.name%> <br>
+      <span class="mr-2 text-success">amount:</span>$<span><%=transaction.amount%></span></div>
+      <div><span><%=transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></span></div>
+      <div class="transactionGroupCreato">
+      <span ><%=transaction.user.name%></span>
+      </div>
+    </div>
+  <div class="amount ml-1 container-fluid space-margin">
+ margin above
+  </div>
+  
+  <% end %>
+  
+  <% end %>
+
+  
+  </section>
+  <% end %>
+</section>
+ <div class="fivefb py-3 tGButtonNg text-center">
+        <%= link_to 'new transaction' ,new_transaction_path , class:'btn btn-transact text-white  border w-50 py-3 ' %>
+</div>

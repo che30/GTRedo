@@ -1,0 +1,50 @@
+
+<% content_for :Groups do %>
+<nav class="NavBackGround d-flex py-1 align-items-center">
+  <%= render 'shared/dropdown' %>
+<div class="text-white marginTGs ">Groups</div>
+</nav>
+<% end %>
+<% flash.each do |msg| %>
+  <div class="alert alert-info text-center">
+    <%= flash[:notice] %>
+  </div>
+<% end %>
+<section class="main-section mb-c">
+
+
+<section class="transactionGroup mt-5 text-white">
+ just for help
+</section>
+<section class="d-flex flex-column mt-3  container-fluid       w-100 ">
+  
+  <% @groups.each do |group| %>
+  <div class="d-flex justify-content-between bg-white align-items-center  py-3  mb-5">
+   <% if group.avatar.attached? %>
+     <div class=" imagediv">   <%= image_tag(group.avatar,class:"transactionImg rounded ") %>
+     </div>
+  <% end %>
+ 
+ 
+  
+    <div class="d-flex flex-column justify-content-between  w-100">
+      <div class="d-flex"> <span class="text-success  ">Name:</span> 
+        <span class="ml-5 pl-5 w-100"><%=group.name%></span></div>
+      <div><span class="text-success ml-1 ">Date created:</span><span> <%= group.created_at.strftime('%d %b %Y')%></span></div>
+      <div class="transactionGroupCreato">
+      </div>
+    </div>
+    <div class="amount">
+ 
+      <div>Created by:</div>
+      <div> <%=group.user.name%></div>
+      </div>
+</div>
+  
+  <% end %>
+  
+  </section>
+</section>
+ <div class="fivefb py-3 tGButton text-center">
+        <%= link_to 'new group',new_group_path , class:'btn btn-transact text-white  border w-50 py-3 ' %>
+</div>

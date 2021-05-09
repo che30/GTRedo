@@ -1,0 +1,26 @@
+<% content_for :forgetpassword do %>
+<nav class="NavBackGround d-flex py-1 align-items-center">
+  <%= link_to home_path do %>
+  <i class="fa fa-arrow-left text-white display-6"></i>
+   
+<% end %>
+<div class="text-white marginLogin ">Forgot your password?</div></nav>
+<% end %>
+<div class="form mx-auto">
+
+<%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+<%= render "devise/shared/error_messages", resource: resource %>
+
+<div class="field form-group">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email",class:"form-control" %>
+  </div>
+
+  <div class="actions form-group mb-3">
+    <%= f.submit "Send me reset password instructions",class:"btn btn-primary mt-3" %>
+  </div>
+
+  <%= render "devise/shared/links" %>
+<% end %>
+
+</div>

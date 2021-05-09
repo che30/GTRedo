@@ -1,0 +1,40 @@
+<% content_for :NewTransaction do %>
+<nav class="NavBackGround d-flex py-1 align-items-center">
+  <%= render 'shared/dropdown' %>
+<div class="text-white marginTG ">New Transaction</div>
+</nav>
+<% end %>
+
+<div class=" w-50 mx-auto top-common-margins">
+  <%= form_with model: @transaction,class: 'form-horizontal text-center' do |f| %>
+  <% if flash[:danger] %>
+  
+  <ul class ="alert alert-danger text-center">
+    <% @transaction.errors.full_messages.each do |msg| %>
+    <li class="list-unstyled text-success"> 
+      <%= msg%>
+    </li>
+    <%end%>
+  </ul>
+  <%end%>
+   <div class="form-group mt-2 mb-3">
+    <%= f.text_field :name,class:'form-control ',placeholder: "name" %>
+   </div>
+    <div class="field form-group mt-2 mb-3">
+      <%= f.number_field :amount,class: 'form-control ' ,placeholder: "Amount" %>
+    </div>
+    <div class="field form-group mt-2 mb-3">
+      <%= f.text_field :description,class: 'form-control ' ,placeholder: "description" %>
+    </div>
+
+    <div class="field form-group mt-2 mb-3">
+     <%= collection_select(:transaction, :group_id, Group.all, :id, :name, { :prompt=> 'Group' }, class:
+    "form-control my-3  " )%>
+    </div>
+  
+    <%= f.submit class: "btn btn-primary " %>
+  
+  
+  <% end %>
+  </div>
+

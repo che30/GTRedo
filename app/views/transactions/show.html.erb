@@ -1,0 +1,54 @@
+<% content_for :TransactionDetails do %>
+<nav class="NavBackGround d-flex py-1 align-items-center">
+  
+  <% if session[:http_referer]  %>
+  <%= link_to session[:http_referer] do %>
+  <i class="fa fa-arrow-left text-white display-6"></i>
+   
+<% end %>
+   
+   <% end %>
+   
+  
+ 
+  
+<div class="text-white marginLogin ">Details</div></nav>
+<% end %>
+<section class="top-common-margins container    ">
+ <% if flash[:notice] %>
+    
+   <div class="alert alert-info text-center mt-5">
+     <%= flash[:notice] %>
+   </div>
+  <% end %>
+  <div class="d-flex justify-content-center align-items-center align-content-center">
+    <div class="text-success " >Transaction name:</div>
+    <h3 ><%=@transaction.name%></h3>
+  </div>
+  <div class="d-flex  ">
+  <div class="<%="#{tesmethod}"%>"><i class=" display-1 default-transaction <%="#{default_transaction } "%> "></i>
+  </div>
+   
+  <% if @transaction.group %>
+  <%= image_tag(check_image?(@transaction),class:"width-25  ") %>
+<% end %>
+
+</div>
+<div >
+<div class="d-flex justify-content-between align-items-center align-content-center">
+  <div class="text-success">description:</div>
+  <div><%=  @transaction.description %></div>
+</div>
+<div class="d-flex justify-content-between align-items-center align-content-center">
+  <div class="text-success">Date created :</div>
+  <div><%=@transaction.created_at.strftime('%d %b %Y at %l:%M%P')%></div>
+</div>
+
+
+</div>
+
+   
+</section>
+<div class="fivefb py-3 tGButton text-center">
+  <%= link_to 'new transaction', new_transaction_path , class:'btn btn-transact text-white  border w-50 py-3 ' %>
+</div>
