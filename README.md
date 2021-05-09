@@ -44,8 +44,8 @@ Postgres: >=9.5
 
 To get a local copy up and running follow these simple example steps.
 ## Installation
-- Clone the repository by typing this -> `git clone git@github.com:che30/ROR-Capstone.git` in any folder of your choice
-- Next type the command `cd ROR-Capstone` 
+- Clone the repository by typing this -> `git@github.com:che30/GTRedo.git` in any folder of your choice
+- Next type the command `cd GTRedo` 
 - Checkout  to the feature branch by  typing `git checkout feature`
 - Run the command `yarn install`
 - Run the command `bundle install`
