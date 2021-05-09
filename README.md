@@ -17,8 +17,7 @@ This project  is based on a mobile version app for grouping transactions by goal
 ##   ERD(ENTITY RELATIONAL DIAGRAM)
 ![screenshot](app/assets/images/ROR-ERD.png)
 
-# App Screenshots
-![screenshot](app/assets/images/Screenshot_20200120-012200.png)
+# App Screenshot
 ![screenshot](app/assets/images/Screenshot_20210509-150652.png)
 ![screenshot](app/assets/images/Screenshot_20210509-150700.png)
 
